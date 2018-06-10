@@ -1,6 +1,6 @@
 
 ## News Mood
-##### Background
+### Background
 As you might know, --Twitter-- has become a wildly sprawling jungle of information&mdash;140 characters at a time. 
 Somewhere between 350 million and 500 million tweets are estimated to be sent out _per day_. 
 With such an explosion of data, on Twitter and elsewhere, it becomes more important than ever to tame it in 
@@ -10,10 +10,10 @@ In this activity, we will perform a sentiment analysis of the Twitter activity o
 and show the findings providing a visualized summary of the sentiments expressed in Tweets sent out by the newscast above.
 
 
-###### Analysis
-######## 1. 
-         2.
-         3.
+## Analysis
+#### 1. Based on this sampling data, the majority of these Tweets are positive based on the VADER analysis.
+#### 2. CBS is the news cast with the highest positive sentiment follwed by Fox.
+#### 3. BBC is the newscast with the majority of the neutral sentiments.
 
 
 ```python
@@ -289,9 +289,9 @@ polarity_df
     </tr>
     <tr>
       <th>@CNN</th>
-      <td>25</td>
+      <td>26</td>
       <td>31</td>
-      <td>44</td>
+      <td>43</td>
       <td>100</td>
     </tr>
     <tr>
@@ -326,7 +326,7 @@ bbc_compound
     News_Cast
     @BBC               0.120679
     @CBS               0.326564
-    @CNN               0.102601
+    @CNN               0.093054
     @Fox               0.273989
     @New York Times    0.247308
     Name: Compound, dtype: float64
@@ -381,9 +381,9 @@ sentiments_df
     <tr>
       <th>0</th>
       <td>412</td>
-      <td>75</td>
-      <td>75</td>
-      <td>220</td>
+      <td>76</td>
+      <td>76</td>
+      <td>219</td>
     </tr>
   </tbody>
 </table>
@@ -450,8 +450,8 @@ time_df
     </tr>
     <tr>
       <th>@CNN</th>
-      <td>00:12:26.480000</td>
-      <td>0 days 20:44:08</td>
+      <td>00:13:12.390000</td>
+      <td>0 days 22:00:39</td>
     </tr>
     <tr>
       <th>@Fox</th>
@@ -614,50 +614,50 @@ by_newscast.head()
     </tr>
     <tr>
       <th>200</th>
-      <td>0.0000</td>
-      <td>2018-06-10 00:30:08+00:00</td>
-      <td>1.000</td>
+      <td>0.5719</td>
+      <td>2018-06-10 04:31:46+00:00</td>
+      <td>0.821</td>
       <td>0.000</td>
       <td>@CNN</td>
-      <td>0.000</td>
+      <td>0.179</td>
       <td>201</td>
     </tr>
     <tr>
       <th>201</th>
-      <td>-0.6901</td>
-      <td>2018-06-10 00:03:12+00:00</td>
-      <td>0.738</td>
-      <td>0.262</td>
-      <td>@CNN</td>
+      <td>0.5859</td>
+      <td>2018-06-10 04:16:00+00:00</td>
+      <td>0.847</td>
       <td>0.000</td>
+      <td>@CNN</td>
+      <td>0.153</td>
       <td>202</td>
     </tr>
     <tr>
       <th>202</th>
-      <td>0.6124</td>
-      <td>2018-06-10 00:00:04+00:00</td>
-      <td>0.762</td>
+      <td>0.0000</td>
+      <td>2018-06-10 04:01:04+00:00</td>
+      <td>1.000</td>
       <td>0.000</td>
       <td>@CNN</td>
-      <td>0.238</td>
+      <td>0.000</td>
       <td>203</td>
     </tr>
     <tr>
       <th>203</th>
-      <td>-0.5994</td>
-      <td>2018-06-09 23:30:13+00:00</td>
-      <td>0.849</td>
-      <td>0.151</td>
+      <td>-0.7506</td>
+      <td>2018-06-10 03:30:06+00:00</td>
+      <td>0.670</td>
+      <td>0.330</td>
       <td>@CNN</td>
       <td>0.000</td>
       <td>204</td>
     </tr>
     <tr>
       <th>204</th>
-      <td>-0.2960</td>
-      <td>2018-06-09 23:00:05+00:00</td>
-      <td>0.824</td>
-      <td>0.176</td>
+      <td>0.0000</td>
+      <td>2018-06-10 03:00:10+00:00</td>
+      <td>1.000</td>
+      <td>0.000</td>
       <td>@CNN</td>
       <td>0.000</td>
       <td>205</td>
@@ -835,7 +835,7 @@ bbc_compound
     News_Cast
     @BBC               0.120679
     @CBS               0.326564
-    @CNN               0.102601
+    @CNN               0.093054
     @Fox               0.273989
     @New York Times    0.247308
     Name: Compound, dtype: float64
